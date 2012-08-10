@@ -14,3 +14,14 @@ Usage
 
 Place the Glib.docset directory at dash docset directory.
 This is usually located at `~/Library/Application\ Support/Dash/DocSets`.
+
+Script
+------
+
+`src` directory contains the automated docset generation script.
+To execute, modify the `API` and `MODULE` variable in `src/process.sh` to point to appropriate path.
+
+    $ process.sh
+
+This will create `docSet.dsidx` file.
+This should be placed in `Glib.docset/Contents/Resources`.
